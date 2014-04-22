@@ -61,5 +61,5 @@ Because we will move all custom post types in our themes to a plugins.
 
 == Changelog ==
 
-= 0.1 - 4/21/2014 =
+= 0.1 - 4/22/2014 =
 * Initial Release
