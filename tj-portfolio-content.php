@@ -3,7 +3,7 @@
  * Plugin Name:  Theme Junkie Portfolio Content
  * Plugin URI:   http://www.theme-junkie.com/
  * Description:  Enable portfolio post type to your WordPress website.
- * Version:      0.1.0
+ * Version:      0.1.1
  * Author:       Theme Junkie
  * Author URI:   http://www.theme-junkie.com/
  * Author Email: satrya@theme-junkie.com
