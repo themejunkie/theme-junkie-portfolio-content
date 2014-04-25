@@ -48,10 +48,10 @@ class Tj_Portfolio_Content {
 		/* Load the admin functions files. */
 		add_action( 'plugins_loaded', array( &$this, 'admin' ), 3 );
 
-		/* Load the admin functions files. */
+		/* Load the plugin functions files. */
 		add_action( 'plugins_loaded', array( &$this, 'includes' ), 4 );
 
-		/* Load the admin functions files. */
+		/* Loads the admin styles and scripts. */
 		add_action( 'admin_enqueue_scripts', array( &$this, 'admin_scripts' ) );
 
 	}
@@ -94,7 +94,6 @@ class Tj_Portfolio_Content {
 	}
 
 	/**
-	 * Loads the initial files needed by the plugin.
 	 * Loads the admin functions.
 	 *
 	 * @since  0.1.0
@@ -121,7 +120,7 @@ class Tj_Portfolio_Content {
 	}
 
 	/**
-	 * Loads the css file for the meta boxes.
+	 * Loads the admin styles and scripts.
 	 *
 	 * @since  0.1.0
 	 * @access public
