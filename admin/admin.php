@@ -44,8 +44,8 @@ function tjpc_admin_setup() {
 function tjpc_title_placeholder( $title ) {
 
 	if ( 'portfolio' == get_current_screen()->post_type )
-		$title = esc_attr__( 'Enter project title here', 'tjpc' );
-	
+		$title = esc_attr__( 'Enter project title here', 'theme-junkie-portfolio-content' );
+
 	return $title;
 }
 
@@ -61,8 +61,8 @@ function tjpc_move_discussion_meta_box() {
 	remove_meta_box( 'commentstatusdiv', 'portfolio', 'normal' );
 
 	/* Then re-enable the meta box but move it to the side. */
-	add_meta_box( 'commentstatusdiv', __( 'Discussion', 'tjpc' ), 'post_comment_status_meta_box', 'portfolio', 'side' );
-	
+	add_meta_box( 'commentstatusdiv', __( 'Discussion', 'theme-junkie-portfolio-content' ), 'post_comment_status_meta_box', 'portfolio', 'side' );
+
 }
 
 /**
@@ -80,14 +80,14 @@ function tjpc_edit_portfolio_columns( $columns ) {
 
 	$new_columns = array(
 		'cb'    => '<input type="checkbox" />',
-		'title' => __( 'Project Title', 'tjpc' )
+		'title' => __( 'Project Title', 'theme-junkie-portfolio-content' )
 	);
 
 	if ( current_theme_supports( 'post-thumbnails' ) )
-		$new_columns['thumbnail'] = __( 'Thumbnail', 'tjpc' );
+		$new_columns['thumbnail'] = __( 'Thumbnail', 'theme-junkie-portfolio-content' );
 
-	$new_columns['taxonomy-portfolio-type'] = __( 'Types', 'tjpc' );
-	$new_columns['menu_order'] = __( 'Order', 'tjpc' );
+	$new_columns['taxonomy-portfolio-type'] = __( 'Types', 'theme-junkie-portfolio-content' );
+	$new_columns['menu_order'] = __( 'Order', 'theme-junkie-portfolio-content' );
 
 	return array_merge( $new_columns, $columns );
 }
@@ -130,7 +130,7 @@ function tjpc_manage_portfolio_columns( $column, $post_id ) {
 
 /**
  * Make Order column sortable.
- * 
+ *
  * @since  0.1.0
  * @access public
  * @return object

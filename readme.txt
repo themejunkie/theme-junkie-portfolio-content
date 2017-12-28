@@ -1,9 +1,9 @@
-=== Theme Junkie Portfolio Content ===
+=== Junkie Portfolio ===
 Contributors: themejunkie, satrya
 Tags: portfolio, project, post type, custom post type, taxonomy
-Requires at least: 3.6
-Tested up to: 3.9
-Stable tag: 0.1.1
+Requires at least: 4.0
+Tested up to: 4.9.1
+Stable tag: 1.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -13,7 +13,7 @@ Adds a Portfolio section to your WordPress website.
 
 This plugin adds a portfolio custom post type to your WordPress website to manage your works/projects. It should work with any WordPress themes but you need to create templates for `archive-portfolio.php` and `single-portfolio.php` to display the portfolio.
 
-It has built-in meta boxes to add more data to your portfolio such as:  
+It has built-in meta boxes to add more data to your portfolio such as:
 
 * Project image gallery
 * Client name
@@ -21,7 +21,7 @@ It has built-in meta boxes to add more data to your portfolio such as:
 * Video embed (*yes you can switch the image gallery with video*)
 
 = Plugin Info =
-* Developed by [Theme Junkie](http://www.theme-junkie.com/)
+* Developed by [Theme Junkie](https://www.theme-junkie.com/)
 * Check out the [Github](https://github.com/themejunkie/theme-junkie-portfolio-content) repo to contribute.
 
 = Note for Theme Junkie user =
@@ -61,5 +61,6 @@ Because we will move all custom post types in our themes to a plugins.
 
 == Changelog ==
 
-= 0.1 - 4/22/2014 =
-* Initial Release
+= 1.0.0 - Dec 28, 2017 =
+* Maintenance update
+* Support latest WordPress core

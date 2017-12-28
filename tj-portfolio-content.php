@@ -1,21 +1,21 @@
 <?php
 /**
- * Plugin Name:  Theme Junkie Portfolio Content
- * Plugin URI:   http://www.theme-junkie.com/
+ * Plugin Name:  Junkie Portfolio
+ * Plugin URI:   https://www.theme-junkie.com/
  * Description:  Enable portfolio post type to your WordPress website.
- * Version:      0.1.1
+ * Version:      1.0.0
  * Author:       Theme Junkie
  * Author URI:   http://www.theme-junkie.com/
- * Author Email: satrya@theme-junkie.com
+ * Author Email: support@theme-junkie.com
  *
- * This program is free software; you can redistribute it and/or modify it under the terms of the GNU 
- * General Public License as published by the Free Software Foundation; either version 2 of the License, 
+ * This program is free software; you can redistribute it and/or modify it under the terms of the GNU
+ * General Public License as published by the Free Software Foundation; either version 2 of the License,
  * or (at your option) any later version.
  *
- * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without 
+ * This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without
  * even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
  *
- * You should have received a copy of the GNU General Public License along with this program; if not, write 
+ * You should have received a copy of the GNU General Public License along with this program; if not, write
  * to the Free Software Foundation, Inc., 51 Franklin St, Fifth Floor, Boston, MA 02110-1301 USA
  *
  * @package    Theme_Junkie_Portfolio_Content
@@ -90,7 +90,7 @@ class Tj_Portfolio_Content {
 	 * @return void
 	 */
 	public function i18n() {
-		load_plugin_textdomain( 'tjpc', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+		load_plugin_textdomain( 'theme-junkie-portfolio-content', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
 	}
 
 	/**
@@ -144,12 +144,12 @@ class Tj_Portfolio_Content {
 		/* Localize custom JS. */
 		wp_localize_script( 'tjpc-media', 'tjpc_media',
 			array(
-				'title'  => __( 'Upload or Choose Your Image Files', 'tjpc' ),
-				'button' => __( 'Add to Gallery', 'tjpc' ),
-				'attr'   => __( 'Remove image', 'tjpc' )
+				'title'  => __( 'Upload or Choose Your Image Files', 'theme-junkie-portfolio-content' ),
+				'button' => __( 'Add to Gallery', 'theme-junkie-portfolio-content' ),
+				'attr'   => __( 'Remove image', 'theme-junkie-portfolio-content' )
 			)
 		);
-		
+
 	}
 
 }

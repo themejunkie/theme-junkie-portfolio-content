@@ -22,19 +22,19 @@ add_action( 'init', 'tjpc_register_taxonomy' );
 function tjpc_register_taxonomy() {
 
 	$labels = array(
-		'name'              => __( 'Types', 'tjpc' ),
-		'singular_name'     => __( 'Type', 'tjpc' ),
-		'menu_name'         => __( 'Types', 'tjpc' ),
-		'all_items'         => __( 'All Types', 'tjpc' ),
-		'edit_item'         => __( 'Edit Type', 'tjpc' ), 
-		'view_item'         => __( 'View Type', 'tjpc' ), 
-		'update_item'       => __( 'Update Type', 'tjpc' ),
-		'add_new_item'      => __( 'Add New Type', 'tjpc' ),
-		'new_item_name'     => __( 'New Type', 'tjpc' ),
-		'parent_item'       => __( 'Parent Type', 'tjpc' ),
-		'parent_item_colon' => __( 'Parent Type:', 'tjpc' ),
-		'search_items'      => __( 'Search Types', 'tjpc' ),
-		'not_found'         => __( 'No types found.', 'tjpc' ),
+		'name'              => __( 'Types', 'theme-junkie-portfolio-content' ),
+		'singular_name'     => __( 'Type', 'theme-junkie-portfolio-content' ),
+		'menu_name'         => __( 'Types', 'theme-junkie-portfolio-content' ),
+		'all_items'         => __( 'All Types', 'theme-junkie-portfolio-content' ),
+		'edit_item'         => __( 'Edit Type', 'theme-junkie-portfolio-content' ),
+		'view_item'         => __( 'View Type', 'theme-junkie-portfolio-content' ),
+		'update_item'       => __( 'Update Type', 'theme-junkie-portfolio-content' ),
+		'add_new_item'      => __( 'Add New Type', 'theme-junkie-portfolio-content' ),
+		'new_item_name'     => __( 'New Type', 'theme-junkie-portfolio-content' ),
+		'parent_item'       => __( 'Parent Type', 'theme-junkie-portfolio-content' ),
+		'parent_item_colon' => __( 'Parent Type:', 'theme-junkie-portfolio-content' ),
+		'search_items'      => __( 'Search Types', 'theme-junkie-portfolio-content' ),
+		'not_found'         => __( 'No types found.', 'theme-junkie-portfolio-content' ),
 	);
 
 	$defaults = array(

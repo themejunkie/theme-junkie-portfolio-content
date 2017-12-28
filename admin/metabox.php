@@ -28,9 +28,9 @@ function tjpc_add_meta_boxes() {
 	if ( 'portfolio' != get_current_screen()->post_type )
 		return;
 
-	add_meta_box( 
+	add_meta_box(
 		'tjpc-metaboxes-portfolio',
-		__( 'Project Settings', 'tjpc' ),
+		__( 'Project Settings', 'theme-junkie-portfolio-content' ),
 		'tjpc_metaboxes_display',
 		'portfolio',
 		'normal',
@@ -54,24 +54,24 @@ function tjpc_metaboxes_display( $post ) {
 
 		<div class="tjpc-label">
 			<label for="tjpc-portfolio-gallery">
-				<strong><?php _e( 'Project Gallery', 'tjpc' ); ?></strong><br />
-				<span class="description"><?php _e( 'Upload the project image gallery.', 'tjpc' ); ?></span>
+				<strong><?php _e( 'Project Gallery', 'theme-junkie-portfolio-content' ); ?></strong><br />
+				<span class="description"><?php _e( 'Upload the project image gallery.', 'theme-junkie-portfolio-content' ); ?></span>
 			</label>
 		</div>
 
 		<div class="tjpc-input">
 
-			<a href="#" class="tjpc-open-media button" title="<?php esc_attr_e( 'Add Images', 'tjpc' ); ?>"><?php _e( 'Add Images', 'tjpc' ); ?></a>
+			<a href="#" class="tjpc-open-media button" title="<?php esc_attr_e( 'Add Images', 'theme-junkie-portfolio-content' ); ?>"><?php _e( 'Add Images', 'theme-junkie-portfolio-content' ); ?></a>
 
 			<?php $image_id = get_post_meta( $post->ID, 'tj_image_ids', true ); ?>
 			<?php $ids = array_filter( explode( ',', $image_id ) ); ?>
-				
+
 			<ul id="tjpc-images-list">
 				<?php if ( $ids ) { ?>
 					<?php foreach ( $ids as $id ) { ?>
 						<li class="tjpc-image" data-image-id="<?php echo $id; ?>">
 							<?php echo wp_get_attachment_image( $id, 'thumbnail' ); ?>
-							<a href="#" class="tjpc-delete" title="<?php esc_attr_e( 'Remove image', 'tjpc' ); ?>"><div class="dashicons dashicons-no"></div></a>
+							<a href="#" class="tjpc-delete" title="<?php esc_attr_e( 'Remove image', 'theme-junkie-portfolio-content' ); ?>"><div class="dashicons dashicons-no"></div></a>
 						</li>
 					<?php } ?>
 				<?php } ?>
@@ -87,13 +87,13 @@ function tjpc_metaboxes_display( $post ) {
 
 		<div class="tjpc-label">
 			<label for="tjpc-portfolio-short-desc">
-				<strong><?php _e( 'Short Description', 'tjpc' ); ?></strong><br />
-				<span class="description"><?php _e( 'A short description of the project.', 'tjpc' ); ?></span>
+				<strong><?php _e( 'Short Description', 'theme-junkie-portfolio-content' ); ?></strong><br />
+				<span class="description"><?php _e( 'A short description of the project.', 'theme-junkie-portfolio-content' ); ?></span>
 			</label>
 		</div>
 
 		<div class="tjpc-input">
-			<input type="text" name="tjpc-portfolio-short-desc" id="tjpc-portfolio-short-desc" value="<?php echo sanitize_text_field( get_post_meta( $post->ID, 'tj_portfolio_short_desc', true ) ); ?>" size="30" style="width: 99%;" placeholder="<?php esc_attr_e( 'A short project description.', 'tjpc' ); ?>" />
+			<input type="text" name="tjpc-portfolio-short-desc" id="tjpc-portfolio-short-desc" value="<?php echo sanitize_text_field( get_post_meta( $post->ID, 'tj_portfolio_short_desc', true ) ); ?>" size="30" style="width: 99%;" placeholder="<?php esc_attr_e( 'A short project description.', 'theme-junkie-portfolio-content' ); ?>" />
 		</div>
 
 	</div><!-- #tjpc-block -->
@@ -102,13 +102,13 @@ function tjpc_metaboxes_display( $post ) {
 
 		<div class="tjpc-label">
 			<label for="tjpc-portfolio-client">
-				<strong><?php _e( 'Client Name', 'tjpc' ); ?></strong><br />
-				<span class="description"><?php _e( 'The client name of the project.', 'tjpc' ); ?></span>
+				<strong><?php _e( 'Client Name', 'theme-junkie-portfolio-content' ); ?></strong><br />
+				<span class="description"><?php _e( 'The client name of the project.', 'theme-junkie-portfolio-content' ); ?></span>
 			</label>
 		</div>
 
 		<div class="tjpc-input">
-			<input type="text" name="tjpc-portfolio-client" id="tjpc-portfolio-client" value="<?php echo sanitize_text_field( get_post_meta( $post->ID, 'tj_portfolio_client', true ) ); ?>" size="30" style="width: 99%;" placeholder="<?php esc_attr_e( 'Company Name', 'tjpc' ); ?>" />
+			<input type="text" name="tjpc-portfolio-client" id="tjpc-portfolio-client" value="<?php echo sanitize_text_field( get_post_meta( $post->ID, 'tj_portfolio_client', true ) ); ?>" size="30" style="width: 99%;" placeholder="<?php esc_attr_e( 'Company Name', 'theme-junkie-portfolio-content' ); ?>" />
 		</div>
 
 	</div><!-- #tjpc-block -->
@@ -117,8 +117,8 @@ function tjpc_metaboxes_display( $post ) {
 
 		<div class="tjpc-label">
 			<label for="tjpc-portfolio-url">
-				<strong><?php _e( 'Project Link', 'tjpc' ); ?></strong><br />
-				<span class="description"><?php _e( 'The link of the project.', 'tjpc' ); ?></span>
+				<strong><?php _e( 'Project Link', 'theme-junkie-portfolio-content' ); ?></strong><br />
+				<span class="description"><?php _e( 'The link of the project.', 'theme-junkie-portfolio-content' ); ?></span>
 			</label>
 		</div>
 
@@ -132,8 +132,8 @@ function tjpc_metaboxes_display( $post ) {
 
 		<div class="tjpc-label">
 			<label for="tjpc-portfolio-video">
-				<strong><?php _e( 'Video Embedded Code', 'tjpc' ); ?></strong><br />
-				<span class="description"><?php _e( 'Embed video into your portfolio page. Image Gallery will be hidden.', 'tjpc' ); ?></span>
+				<strong><?php _e( 'Video Embedded Code', 'theme-junkie-portfolio-content' ); ?></strong><br />
+				<span class="description"><?php _e( 'Embed video into your portfolio page. Image Gallery will be hidden.', 'theme-junkie-portfolio-content' ); ?></span>
 			</label>
 		</div>
 

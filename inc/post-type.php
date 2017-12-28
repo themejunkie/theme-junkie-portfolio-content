@@ -22,23 +22,23 @@ add_action( 'init', 'tjpc_register_post_type' );
 function tjpc_register_post_type() {
 
 	$labels = array(
-	    'name'               => __( 'Projects', 'tjpc' ),
-	    'singular_name'      => __( 'Project', 'tjpc' ),
-    	'menu_name'          => __( 'Projects', 'tjpc' ),
-    	'name_admin_bar'     => __( 'Project', 'tjpc' ),
-		'all_items'          => __( 'Projects', 'tjpc' ),
-	    'add_new'            => __( 'Add New', 'tjpc' ),
-		'add_new_item'       => __( 'Add New Project', 'tjpc' ),
-		'edit_item'          => __( 'Edit Project', 'tjpc' ),
-		'new_item'           => __( 'New Project', 'tjpc' ),
-		'view_item'          => __( 'View Project', 'tjpc' ),
-		'search_items'       => __( 'Search Projects', 'tjpc' ),
-		'not_found'          => __( 'No Projects found', 'tjpc' ),
-		'not_found_in_trash' => __( 'No Projects found in trash', 'tjpc' ),
+	    'name'               => __( 'Projects', 'theme-junkie-portfolio-content' ),
+	    'singular_name'      => __( 'Project', 'theme-junkie-portfolio-content' ),
+    	'menu_name'          => __( 'Projects', 'theme-junkie-portfolio-content' ),
+    	'name_admin_bar'     => __( 'Project', 'theme-junkie-portfolio-content' ),
+		'all_items'          => __( 'Projects', 'theme-junkie-portfolio-content' ),
+	    'add_new'            => __( 'Add New', 'theme-junkie-portfolio-content' ),
+		'add_new_item'       => __( 'Add New Project', 'theme-junkie-portfolio-content' ),
+		'edit_item'          => __( 'Edit Project', 'theme-junkie-portfolio-content' ),
+		'new_item'           => __( 'New Project', 'theme-junkie-portfolio-content' ),
+		'view_item'          => __( 'View Project', 'theme-junkie-portfolio-content' ),
+		'search_items'       => __( 'Search Projects', 'theme-junkie-portfolio-content' ),
+		'not_found'          => __( 'No Projects found', 'theme-junkie-portfolio-content' ),
+		'not_found_in_trash' => __( 'No Projects found in trash', 'theme-junkie-portfolio-content' ),
 		'parent_item_colon'  => '',
 	);
 
-	$defaults = array(	
+	$defaults = array(
 		'labels'              => apply_filters( 'tjpc_portfolio_labels', $labels ),
 		'public'              => true,
 		'exclude_from_search' => false,
